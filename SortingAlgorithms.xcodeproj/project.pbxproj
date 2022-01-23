@@ -13,6 +13,12 @@
 		7BAB9B302777894C00A71ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB9B2E2777894C00A71ED7 /* Main.storyboard */; };
 		7BAB9B322777895300A71ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB9B312777895300A71ED7 /* Assets.xcassets */; };
 		7BAB9B352777895300A71ED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB9B332777895300A71ED7 /* LaunchScreen.storyboard */; };
+		7BAB9B4227778CF700A71ED7 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB9B4127778CF700A71ED7 /* BubbleSort.swift */; };
+		7BAB9B442777B6E900A71ED7 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB9B432777B6E900A71ED7 /* InsertionSort.swift */; };
+		7BAB9B462777B84E00A71ED7 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB9B452777B84E00A71ED7 /* SelectionSort.swift */; };
+		7BAB9B482777BA5C00A71ED7 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB9B472777BA5C00A71ED7 /* MergeSort.swift */; };
+		7BAB9B4A2777BEC900A71ED7 /* ShakerSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB9B492777BEC900A71ED7 /* ShakerSort.swift */; };
+		7BAB9B4C2777C50100A71ED7 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB9B4B2777C50100A71ED7 /* QuickSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		7BAB9B312777895300A71ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BAB9B342777895300A71ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BAB9B362777895300A71ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BAB9B4127778CF700A71ED7 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
+		7BAB9B432777B6E900A71ED7 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		7BAB9B452777B84E00A71ED7 /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
+		7BAB9B472777BA5C00A71ED7 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		7BAB9B492777BEC900A71ED7 /* ShakerSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakerSort.swift; sourceTree = "<group>"; };
+		7BAB9B4B2777C50100A71ED7 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,61 @@
 		7BAB9B272777894C00A71ED7 /* SortingAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
-				7BAB9B282777894C00A71ED7 /* AppDelegate.swift */,
-				7BAB9B2A2777894C00A71ED7 /* SceneDelegate.swift */,
-				7BAB9B2C2777894C00A71ED7 /* ViewController.swift */,
-				7BAB9B2E2777894C00A71ED7 /* Main.storyboard */,
-				7BAB9B312777895300A71ED7 /* Assets.xcassets */,
-				7BAB9B332777895300A71ED7 /* LaunchScreen.storyboard */,
-				7BAB9B362777895300A71ED7 /* Info.plist */,
+				7BAB9B3C2777896900A71ED7 /* Delegates */,
+				7BAB9B3F27778B6900A71ED7 /* Extra */,
+				7BAB9B3D2777898400A71ED7 /* Storyboards */,
+				7BAB9B3E277789B900A71ED7 /* Controllers */,
+				7BAB9B4027778B9D00A71ED7 /* Algorithms */,
 			);
 			path = SortingAlgorithms;
+			sourceTree = "<group>";
+		};
+		7BAB9B3C2777896900A71ED7 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7BAB9B282777894C00A71ED7 /* AppDelegate.swift */,
+				7BAB9B2A2777894C00A71ED7 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7BAB9B3D2777898400A71ED7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7BAB9B2E2777894C00A71ED7 /* Main.storyboard */,
+				7BAB9B332777895300A71ED7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7BAB9B3E277789B900A71ED7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BAB9B2C2777894C00A71ED7 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7BAB9B3F27778B6900A71ED7 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				7BAB9B312777895300A71ED7 /* Assets.xcassets */,
+				7BAB9B362777895300A71ED7 /* Info.plist */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		7BAB9B4027778B9D00A71ED7 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				7BAB9B4127778CF700A71ED7 /* BubbleSort.swift */,
+				7BAB9B432777B6E900A71ED7 /* InsertionSort.swift */,
+				7BAB9B452777B84E00A71ED7 /* SelectionSort.swift */,
+				7BAB9B472777BA5C00A71ED7 /* MergeSort.swift */,
+				7BAB9B492777BEC900A71ED7 /* ShakerSort.swift */,
+				7BAB9B4B2777C50100A71ED7 /* QuickSort.swift */,
+			);
+			path = Algorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BAB9B2D2777894C00A71ED7 /* ViewController.swift in Sources */,
+				7BAB9B4A2777BEC900A71ED7 /* ShakerSort.swift in Sources */,
+				7BAB9B442777B6E900A71ED7 /* InsertionSort.swift in Sources */,
 				7BAB9B292777894C00A71ED7 /* AppDelegate.swift in Sources */,
+				7BAB9B4C2777C50100A71ED7 /* QuickSort.swift in Sources */,
 				7BAB9B2B2777894C00A71ED7 /* SceneDelegate.swift in Sources */,
+				7BAB9B482777BA5C00A71ED7 /* MergeSort.swift in Sources */,
+				7BAB9B462777B84E00A71ED7 /* SelectionSort.swift in Sources */,
+				7BAB9B4227778CF700A71ED7 /* BubbleSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K3BWCY8G6P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SortingAlgorithms/Info.plist;
+				INFOPLIST_FILE = SortingAlgorithms/Extra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +383,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K3BWCY8G6P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SortingAlgorithms/Info.plist;
+				INFOPLIST_FILE = SortingAlgorithms/Extra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
